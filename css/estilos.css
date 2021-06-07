@@ -1,0 +1,1094 @@
+/*---------------------Practica1----------------------*/
+* {
+    font-size: 20px;
+}
+body {
+    background: url('../img/fondo-madera-rosa_43307-19.jpg');
+    background-size: cover;
+	background-attachment: fixed;
+    color: #fff;
+}
+.contenido{
+    margin: 45px;
+    border-radius: 6px;
+    border: 6px solid #fff;
+    padding: 40px;
+    box-shadow:inset 0 0 100px #000;
+}
+
+.colores{
+    background: gray;
+}
+.yellow{
+    color:#ffff00;
+}
+.green{
+    color:#32CD32;
+}
+.orange{
+    color:#FF0000;
+}
+.pink{
+    color:#FF1493;
+}
+.white{
+    color:#FFA500;
+}
+/*-------------------practica 2-----------------------*/
+[atributo="elemento"]{
+color:black;
+}
+
+h4 span {
+color:rgb(0, 38, 255)
+}
+ 
+.hover:hover{
+color:black;
+}
+.line::first-line{color:red}
+.letter::first-letter{color:blue}
+.after::after{content:"Hola";color:yellow}
+.before::before{content:"Hola"}
+.selection::selection{color:brown}
+
+h6{
+    color:rgb(0, 38, 255);
+}
+.child p:first-child{color:red;}
+.child p:last-child{color:green;}
+.cls{color:red;}
+[soy="p"]{color:rgb(0, 38, 255)}
+#identificador{
+    color:orange;
+}
+.p {
+    color:purple !important;
+}
+/*Metodología BEM*/
+.contact-form {
+    width: 300px;
+    margin: 10px auto;
+    border: 3px solid rgb(25, 26, 25);
+    border-radius: 5px;
+    padding: 40px 15px;
+}
+.contact-form__input,.contact-form__input--active{
+    color: rgb(0, 38, 255);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.suscribete-form{
+    width: 250px;
+    margin: 10px auto;
+    border: 5px solid rgb(11, 72, 151);
+    border-radius: 10px;
+    padding: 40px 50px;
+}
+.suscribete-form__p-h2{
+    background: rgb(15, 14, 15);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+/*---------------------..Practica 3---------------------------*/
+.DIV{
+    background: red;
+    width: 50vw;
+    height: 20vh;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.pt{
+    font-size:2em;
+    font-family:Georgia, serif ;
+    line-height:2;
+    font-weight:600;
+    font-stretch: normal;
+    font-variant:smal-caps;
+
+}
+.bloc{
+    background: brown;
+    display: inline;
+}
+.linea{
+    background: chartreuse;
+    display: block;
+}
+/*-----------------Practica 4----------*/
+.caja{
+    background-color: rgb(145, 255, 0);
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 10px 20px 30px 40px;
+    height: 100px;
+    width: 100px;
+    box-sizing: content-box;
+    padding: 100px;
+    margin-right: 40px;
+    border-radius: 10px;
+    border: 4px solid #a22;
+    line-height: 1;
+    box-shadow: 10px 15px 10px 10px #000;
+    text-shadow: 2px 2px 7px rgb(17, 16, 16), 2px 2px 7px rgb(31, 26, 26);
+    transform: rotate(0deg);
+
+}
+/*--------------------Practica 5-----------------*/
+.caja1{
+    width: 200px;
+    height: 200px;
+    background: rgb(255, 81, 0);
+    margin: auto;
+    outline: 10px solid rgb(212, 0, 255);
+}
+.caja2{
+    width: 200px;
+    height: 200px;
+    background: rgb(238, 255, 0);
+    margin: auto;
+}
+.cuadro1, .cuadro2, .cuadro3{
+    width:100px;
+    height: 100px;
+}
+.cuadro1{
+    background-color: rgb(113, 0, 128);
+    
+}
+.cuadro2{
+    background-color: rgb(0, 4, 255);
+    position: relative;
+    top:40px;
+    left: 10px;
+    z-index: 100;
+}
+.cuadro3{
+    background-color: rgb(6, 185, 245);
+    position: relative;
+    z-index: 10;
+}
+.contenedor{
+    width: 300px;
+    height: 300px;
+    background: rgb(226, 255, 192);
+    margin: 40px;
+    position: relative;
+}
+.hijo{
+    background: rgb(128, 128, 128);
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+}
+.a1, .a2, .a3, .a4, .a5{
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: rgb(0, 255, 0);
+
+}
+.c{
+    position: relative;
+    margin: 50px auto;
+    border: 4px solid orange;
+    height: 450px;
+    width: 450px;
+    background: purple;
+}
+.a1{
+    right: 0;
+    bottom: 0;
+}
+.a2{
+    right: 0;
+}
+.a3{
+    top: 0;
+}
+.a4{
+    bottom: 0;
+}
+.a5{
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+/*---------------practica 6---------------------*/
+.caja-fixed {
+    width: 300px;
+    background: red;
+    position: fixed;
+    z-index: 200;
+    top:20px;
+    right: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border:4px solid black;
+    opacity: .8;
+
+}
+.caja-sticky{
+    background: rgb(165, 157, 42);
+    position: sticky;
+    top: 0px;
+    width: auto;
+    height: 50px;
+    border-radius: 0px 0px 10px 10px;
+    opacity: .9;
+}
+.l{
+    background: rgb(52, 165, 42);
+    border: 3px solid #FFA500;
+    /*No se puede colocar width, height*/
+}
+.b{
+    background: #ff00dd;
+    width: 100px;
+    height: 40px;
+    display: block;
+    border: 3px solid #ff00dd;
+}
+.ib{
+    background: #ff0022;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 3px solid #fdfdf8;
+}
+/*-------------------------practica 7-------------*/
+.scroll{
+    width: 200px;
+    height: 300px;
+    background: black;
+    border: 2px solid red;
+    overflow: auto;
+}
+.scroll1{
+    width: 200px;
+    height: 300px;
+    background: #f5a003;
+    border: 2px solid red;
+    overflow: hidden;
+}
+.scroll1 img{
+    width: 1000px;
+    position: relative;
+    top:60px;
+    left: 40px;
+    outline: 2px solid red;
+}
+.cont div{
+    width: 50%;
+    float: right;
+}
+.primario{
+    background: red;
+}
+.secundario{
+    background: black;
+}
+.cont2{
+    margin: auto;
+    margin-top: 100px;
+    border: 4px solid red;
+    background: grey;
+    width: 50%;
+}
+.cont2{
+    width: 500px;
+}
+.cont2 img{
+    float: right;
+    width: 100px;
+}
+.texto{
+    padding: 20px;
+    width: 500px;
+    border: 2px solid red;
+}
+.texto::first-line{
+    color:blue;
+    font-size: 2em;
+}
+.texto::first-letter{
+    color: #ff00dd;
+    font-size: 3em;
+}
+
+.form7{
+    margin-top: 10px;
+    border: 2px solid pink;
+    width: 280px;
+    padding: 10px;
+    background: blue;
+}
+.form7 input::placeholder{
+    color:red;
+}
+.form7 input::selection{
+    background:brown;
+}
+.bef::before {
+content: "Hola soy Monsserrath Rojo Bautista";
+background: black;
+}
+.bef::after {
+    content: "¿Como estas?";
+    background: rgb(42, 120, 165);
+    }
+.pseudo{
+    height: 200px;
+    width:200px;
+    background: rgb(31, 19, 107);
+    transition: all 1s;
+}
+.pseudo:hover{
+    background: red;
+    width: 300px;
+    height: 300px;
+}
+/*------------------Practica8--------------*/
+.link:link{
+    color:blue
+}
+.link:visited{
+    color:gray;
+}
+.active{
+    width:100px;
+    height: 50px;
+    background: black;
+    transition: all 1s;
+}
+.active:active{
+    background: black;
+    width: 100px;
+}
+.focus{
+    background: rgb(255, 0, 0);
+}
+.focus:focus{
+    background: blanchedalmond;
+}
+.caja8{
+    margin: 15px;
+}
+.caja8 b:lang(en){
+    background: gray;
+    padding: 20px;
+}
+.caja81{
+    margin: 50px;
+    width: 300px;
+    height: 500px;
+}
+.caja81 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    object-fit: cover;
+
+}
+.caja82{
+    margin: 50px;
+    width: 300px;
+    height: 500px;
+}
+.caja82 img{
+    width: 90%;
+    height: 90%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: left;
+
+}
+.cursor{
+    width: 75px;
+    height: 75px;
+    background: lightcoral;
+    cursor: pointer;
+}
+.cursor:active{
+    cursor: row-resize;
+}
+/*-------------------Practica9-----------*/
+.color div{
+    width:250px;
+    height:250px;
+}
+.hexa{
+    background: #32CD32;
+}
+.normal{
+    background: blue;
+}
+.rgba{
+    background: rgba(135, 24, 209, 0.65);
+}
+.caja-res div{
+width: 45%;
+display: inline-block;
+padding: 20px;
+background: #ddd;
+}
+.responsive h1{
+    font-size: 20px;
+}
+
+@media only screen and (max-width:800px){
+    .caja-res div{
+        display: block;
+        width: 100%;
+    }
+}
+/*----------------------Practica 10------------*/
+.flex-container{
+    display:flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-content: flex-end;
+}
+.item{
+    background-color: rgb(177, 212, 18);
+    color: #fff;
+    margin: 5px;
+    min-width: 120px;
+    height: 100px;
+    text-align: center;
+}
+/*------------------------Practica 11--------------------*/
+.flex-container2{
+    display:flex;
+    height: 50vh;
+}
+.item2{
+    background-color: rgb(20, 92, 235);
+    color: #fff;
+    margin: 5px;
+    min-width: 120px;
+    text-align: center;
+    height: 100px;
+    margin:auto;
+}
+.flex-container3{
+    display:flex;
+    height: 50vh;
+    flex-wrap: wrap;
+}
+.item3{
+    background-color: rgb(27, 190, 219);
+    color: #fff;
+    margin: 5px;
+    min-width: 100px;
+    text-align: center;
+    height: 100px;
+    flex-grow: 2;
+    width: 300px;
+}
+.d{
+    flex-basis: 300px;
+    flex-shrink: 2;
+}
+.t {
+    flex-grow: 1;
+}
+/*----------------practica 12--------------*/
+.flex-container4{
+    display:flex;
+    height: 50vh;
+    flex-direction: row-reverse;
+}
+.item4{
+    background-color: rgb(170, 155, 22);
+    color: #fff;
+    min-width: 100px;
+    height: 150px;
+    text-align: center;
+    width: 200px;
+    flex: 1;
+}
+.orange{
+    background: rgb(255, 0, 85);
+    flex: 1 0 350px;
+    order:4;
+}
+.green {
+    background: blue;
+}
+
+.flex-container12{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #333;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+.form12{
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 5;
+}
+.form12__input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border:none;
+    border-bottom: 4px solid #1c7;
+    background: transparent;
+    color: #fff;
+}
+.form12__input:focus{
+    background: linear-gradient(to bottom , transparent, #222);
+    outline: none;
+    border-bottom: 3px solid rgb(202, 24, 24);
+}
+.form12 textarea {
+    min-height: 150px;
+    resize:none;
+}
+.form12-img{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 300px;
+    max-width: 400px;
+    order: 2;
+}
+.form12-img img{
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 30px;
+}
+.form12 input[type="submit"]{
+    background-color: rgb(153, 0, 133);
+    border-bottom: none;
+    padding: 12px;
+}
+.form12 input[type="submit"]:hover{
+    background-color: rgb(119, 0, 83);
+    border-bottom: none;
+    padding: 12px;
+}
+.form12 input[type="submit"]:focus{
+    background-color: #094;
+}
+.form12 input[type="submit"]:active{
+    background-color: linear-gradient(to bottom , #072, #050);;
+}
+/*-------------Practica 13---------------------*/
+.gird-container{
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px 1fr;
+    border: 3px solid #000;
+    grid-gap: 10px;
+}
+.gird-item{
+    border: 2px solid #48e;
+}
+.gird-item:first-child{
+    background: #32CD32;
+    grid-column: 1/3;
+    grid-row:1/3
+}
+.gird-item:nth-child(2){
+    background: rgb(52, 86, 179);
+    grid-column: 3/5;
+}
+/*-------------------Practica 14----------------*/
+.gird-container14{
+    display: grid;
+    grid-template-rows: repeat(3,150px);
+    grid-template-columns: repeat(3,150px) 1fr;
+    border: 5px solid #000;
+    grid-gap: 10px;
+}
+.gird-item14{
+    border: 5px solid #fff;
+    border-radius: 5px;
+}
+.gird-item14:first-child{
+    background: rgba(67, 172, 185, 0.623);
+    grid-column: 1/3;
+    grid-row:1/3
+}
+.gird-item14:nth-child(2){
+    background: rgba(206, 80, 63, 0.863);
+    grid-column: 3/5;
+}
+/**/
+.gird-container141{
+    display: grid;
+    grid-template-columns: repeat(6,100px) 1fr;
+    grid-template-rows: repeat(3,150px);
+    grid-auto-rows: 150px;
+    grid-auto-columns: 100px;
+    border: 3px solid #000;
+    background: #32CD32;
+    grid-auto-flow: dense;
+}
+.gird-item141{
+    border: 1px solid #000;
+    background: #999;
+}
+/**/
+.gird-container142{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(120px, 1fr));
+    grid-template-rows: repeat(3,150px);
+    grid-auto-rows: 3fr;
+    grid-auto-columns: 3fr;
+    border: 3px solid #000;
+    background: #333;
+    grid-auto-flow: dense;
+}
+.gird-item142{
+    border: 1px solid #000;
+    background: #999;
+}
+/*----------practica15--------*/
+.gird-container15{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 30px solid #000;
+    background: #333;
+    grid-auto-flow: dense;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 1000px;
+    align-items: center;
+    justify-items: center;
+}
+.gird-item15{
+    border: 3px solid #000;
+    background: #999;
+    font-size:60px;
+    padding: 60px;
+}
+
+.gird-item15:first-child{
+    align-self: start;
+    justify-self: start;
+    background: blue;
+}
+
+.gird-item15:nth-child(6) {
+    justify-self: start;
+}
+.gird-item15:nth-child(5) {
+    background: pink;
+}
+.gird-item15:nth-child(4){
+    justify-self: end;
+}
+.gird-item15:nth-child(7){
+    align-self: end;
+    justify-self: start;
+    background: yellow;
+}
+.gird-item15:nth-child(3){
+    align-self: start;
+    justify-self: end;
+    background: purple;
+}
+.gird-item15:last-child{
+    align-self: end;
+    justify-self: end;
+    background: red;
+}
+/*--*/
+.gird-container151{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 3px solid #000;
+    background: #333;
+    grid-auto-flow: dense;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 600px;
+    align-items: center;
+    justify-items: center;
+}
+.gird-item151{
+    border: 1px solid #000;
+    background: #999;
+    font-size:15px;
+    padding: 30px;
+}
+.gird-item151:first-child{
+    background-color: maroon;
+    order:3
+}
+.gird-item151:nth-child(3){
+    background-color: limegreen;
+    order:2
+}
+/*--------Practica 16---------*/
+.grid-container{
+    background: #444;
+    margin: 8px;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+    grid-template-rows: repeat(auto-fill, 1fr);
+    height: 92vh;
+    border:10px solid #000;
+}
+.grid-item{
+    padding: 30px;
+}
+ul li {
+    display: inline-block;
+}
+.grid-footer{
+    background: #6f9;
+    grid-area: footer;
+}
+.grid-header{
+    background: #f96;
+    grid-area: header;
+}
+.grid-main{
+    background: #96f;
+    grid-area: main;
+}
+.grid-aside{
+    background: #888;
+    grid-area: aside;
+}
+/*--*/
+.grid-container1{
+    background: #444;
+    display: grid;
+    grid-template-rows:
+    [f-line]
+    100px
+    [s-line]
+    100px
+    [t-line]
+    100px
+    [f-line];
+    grid-template-columns:
+    100px
+    100px
+    100px;
+    border:5px solid #000;
+}
+.grid-item1 {
+    border: 3px solid #000;
+    background: lightgrey;
+}
+.grid-item1:first-child{
+    background: yellow;
+    grid-row: f-line/t-line;
+    grid-column: 1/2
+}
+/*----*/
+.div-responsive{
+    background: #c95;
+}
+
+@media screen and (min-width: 400px) and (max-width:650px){
+    .div-responsive{
+        background: red;
+        padding: 10px;
+    } 
+}
+@media screen and (min-width: 650px) and (max-width:800px){
+    .div-responsive{
+        background: green;
+        font-size: 50px;
+    } 
+}
+@media screen and (min-width: 800px) and (max-width:1200px){
+    .div-responsive{
+        background: orange;
+        margin: 50px;
+    } 
+}
+@media screen and (min-width: 1500px){
+    .div-responsive{
+        background: #000;
+        color: #fff;
+    } 
+}
+/*-------------------practica 17-------*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+.header, .main, .aside, .footer{
+    padding: 20px;
+}
+.header {
+    background: lightblue;
+    flex-basis: 30px;
+}
+.main {
+    background:slateblue;
+    flex-basis: 200px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+.aside {
+    background: darkslateblue;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.footer {
+    background: violet;
+    flex-grow: 1;
+}
+@media screen and (min-width: 900px){
+    .content{
+        display: grid;
+        grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .header{
+        grid-column: 1/ span 3;
+    }
+    .main{
+        grid-row: 2/6;
+        grid-column: 1/ span 2;
+    }
+    .aside{
+        grid-row:2/6;
+    }
+    .footer{
+        grid-row:6/7;
+        grid-column:1/ span 3;
+    }
+}
+/*--*/
+.container17{
+    height: 300px;
+    background: #86f;
+    padding:30px;
+}
+.caja17{
+    background: #025;
+    height: 100px;
+    width: 100px;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-delay: 3s;
+}
+.caja17:hover{
+    background: lightgreen;
+}
+/*---*/
+.container171{
+    padding: 20px 5px;
+    background: rgb(143, 240, 32);
+}
+.caja171{
+    background: #025;
+    height: 100px;
+    width: 100px;
+    transition-property: left, background;
+    transition-duration: 1s, 4s;
+    margin: 30px;
+    border: 1px solid #000;
+    position: relative;
+    left: 0;
+}
+.container171:hover > .caja171{
+    left: 80%;
+    background: #fff;
+}
+.caja171:first-child{
+    transition-timing-function:linear ;
+}
+.caja171:nth-child(2){
+    transition-timing-function:ease ;
+}
+.caja171:nth-child(3){
+    transition-timing-function: ease-in;
+}
+.caja171:nth-child(4){
+    transition-timing-function:ease-out ;
+}
+.caja171:nth-child(5){
+    transition-timing-function: ease-in-out ;
+}
+/*---*/
+.container172{
+    padding: 20px 5px;
+    background: rgb(255, 7, 255);
+}
+.caja172{
+    background: #025;
+    height: 200px;
+    width: 200px;
+    margin: 120px;
+    position: relative;
+    animation-name: des;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.04, 1.48, .8, .14);
+}
+@keyframes des {
+    0% {
+        background: #025;
+        left: 0;
+    }
+    50%{
+        background: blue;
+    }
+    100% {
+        left: 100%;
+        background: yellow;
+    }
+}
+/*-----------Practica 18-------------*/
+.containert{
+    padding: 80px 2px;
+    background: #86f;
+}
+.cajat{
+    background: #025;
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+    display: flex;
+    color: #fff;
+    /*transform: translateX(100%);
+    transform: translateY(100%);*/
+    /*transform: translate(100px, 100px);*/
+    /*transform: scale(2);*/
+    transition: transform 1s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.cajat:hover{
+    /*transform: scaleX(2);
+    transform: scaleY(2);*/
+    /*transform: scale(2) translate(50px);*/
+    transform: skew(30deg) 
+}
+.cajat b{
+    margin: auto;
+}
+.backg{
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    background-image: url(../img/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-clip: padding-box;
+    background-attachment: fixed;*/
+}
+/*-------------Practica 19--------------*/
+.contenido1, .contenido2{
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+}
+:root {
+    --color-rojo-claro: #f00;
+    --color-azul-claro: #66f;
+}
+.contenido1{
+    background: var(--color-rojo-claro);
+}
+.contenido2{
+    background: var(--color-azul-claro);
+}
+.filter-img{
+    /*filter: blur(10px);*/
+    /*filter: brightness(2);*/
+    filter:contrast(1.3);
+    filter:drop-shadow(4px, 4px, 6px, #000)
+}
+
+.cont-1{
+    filter: contrast(30);
+    background-color: #fff;
+}
+.caja-cont{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 40px;
+    border-radius: 50%;
+    filter: blur(20px);
+}
+.caja-cont:first-child{
+    animation: transladar 3s alternate infinite;
+}
+@keyframes transladar{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(160px);
+    }
+}
+.cont-2{
+    padding: 20px;
+    background: #59f;
+    font-size: 20px;
+    direction:rtl;
+}
+.cont-3{
+    padding: 25px;
+    background: #59f;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.cont-4{
+    padding: 18px;
+    background: #59f;
+    font-size: 18px;
+}
+#con{
+    background: yellow;
+    user-select: none;
+}
+.cont-4 a{
+    color: #fff;
+    padding: 8px;
+    background: #000;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}

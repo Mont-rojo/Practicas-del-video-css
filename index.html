@@ -1,0 +1,793 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAS DEL VIDEO CSS</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="js/ir_arriva.js"></script>
+</head>
+<body>
+    <div class="contenido">
+    <h1>Practica_1ra </h1>
+    <h2>Mi primer h2</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <h2>En este apartado, los colores se seleccionan por hexadecimal</h2>
+    <div class="colores">
+    <p class="yellow">Amarillo #FFFFOO</p>
+    <p class="green">Verde #32CD32</p>
+    <p class="orange">Naranja #FF0000</p>
+    <p class="pink">Rosa #FF1493</p>
+    <p class="white">Cafe #FFA500</p>
+    </div>
+    </div>
+    <div class="contenido">
+        <h1>Practica_2da </h1>
+        <h2>Mi primer h2</h2>
+        <p>
+                <h3>Pseudo-clases</h3>
+                <h4 class="hover">A continuacion se Cambia de color</h2>
+                    .hover:hover{<br>
+                        color:Black;<br>
+                    }<br>
+                </p>
+              
+                    <ol>
+                        <ul>1.-Posteriormenre veremos important</ul>
+                        <p>
+                                color:black ¡important!;<br>
+                            }<br>
+                            <p class="p">En la parte del diseño sera por un important</p>
+                        </p>
+                        <ul>2.-Estilos en linea</ul>
+                        <p>
+                            Este tipo de estilos se coloca a un lado del elemento, tiene un rango
+                            mas alto que el de todos, pero no es mas alto que el !important.
+                            Asi es su sintaxis:<br><div><
+                            p style="color:darkorchid;"></div><div>
+                            <
+                                /p></div><br>
+                                <p style="color:darkorchid">Esta linea esta diseñado mediante estilo en linea</p>
+                        </p>
+                        <ul>3.-Identificadores</ul>
+                        <p>Esta especificidad es mas alto pero no mucho que el estilo en linea y !important.<br>
+                        Se da esta forma:<br>
+                        #id {<br>
+                            color: blue;<br>
+                        }<br>
+                        <p id="identificador">Diseño de identificadores</p>
+                        </p>
+                        <ul>4.-Clases</ul>
+                        <ul>4.1.-Pseudo-clases</ul>
+                        <ul>4.2.-Atributos</ul>
+                        <p>En esta seccion tenemos a las Clases, Pseudo-clases y atributos, las cuales tienen el mismo nivel de especificidad.<br>
+                            .clase {<br>
+                                color: green;<br>
+                            }<br>
+                            <p class="cls">Estoy diseñado mediante una clase</p>
+                            [atributo="elemento"] {<br>
+                                color: green;<br>
+                            }<br>
+                            <p soy="p">Estoy diseñado mediante un atributo</p>
+                            <table border="2px">
+                                <tr>
+                                    <td>Pseudo-clase</td>
+                                    <td>Descripción</td>
+                                </tr>
+                                <tr>
+                                    <td>:first-child</td>
+                                    <td>Primer hijo</td>
+                                </tr>
+                                <tr>
+                                    <td>:last-child</td>
+                                    <td>Último hijo</td>
+                                </tr>
+                                <tr>
+                                    <td>:first-of-type</td>
+                                    <td>Último hermano de su tipo</td>
+                                </tr>
+                                <tr>
+                                    <td>:last-of-type</td>
+                                    <td>Último hermano de su typo</td>
+                                </tr>
+                                <tr>
+                                    <td>:only-child</td>
+                                    <td>Hijos únicos</td>
+                                </tr>
+                                <tr>
+                                    <td>:only-of-type</td>
+                                    <td>Únicos hermanos de su tipo</td>
+                                </tr>
+                                <tr>
+                                    <td>:empty</td>
+                                    <td>Elementos que no tienen hijos</td>
+                                </tr>
+                                <tr>
+                                    <td>:nth-child(n)</td>
+                                    <td>Enésimo elemento hijo</td>
+                                </tr>
+                                <tr>
+                                    <td>:nth-last-child(n)</td>
+                                    <td>Enésimo elemento hijo contado desde el último</td>
+                                </tr>
+                                <tr>
+                                    <td>:nth-of-type(n)</td>
+                                    <td>Enésimo hermano de su tipo</td>
+                                </tr>
+                                <tr>
+                                    <td>:nth-last-of-type(n)</td>
+                                    <td>Enésimo hermano de su tipo comenzando desde el último</td>
+                                </tr>
+                                
+                            </table><br>
+                            Ejemplo de una Pseudo-clase<br>
+                            p::first-child{color:red;}<br>
+                            p::last-child{color:green;}<br>
+                            <div class="child">
+                                <p>Primer hijo</p>
+                                <p>Segundo hijo</p>
+                                <p>Tercer hijo</p>
+                            </div>
+                        </p>
+                        <ul>5.-Elementos</ul>
+                        <p>Se le da diseño a todos los elementos las cuales tienen el mismo nombre del que se esta aplicando.<br>
+                            h2 {<br>
+                                color: green;<br>
+                            }<br>
+                            <h6>Yo soy un elemento</h6>
+                            <h6>Yo soy otro elemento con el mismo nombre</h6>
+                        </p>
+                        <ul>6.-Pseudo elementos</ul>
+                        <table border="2px">
+                            <tr>
+                                <td>Pseudo-elemento</td>
+                                <td>Descripción</td>
+                            </tr>
+                            <tr>
+                                <td>::first-line</td>
+                                <td>Primera linea de texto de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>::first-letter</td>
+                                <td>Primera letra de la primera linea de texto de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>::before</td>
+                                <td>Añade contenido al principio del documento</td>
+                            </tr>
+                            <tr>
+                                <td>::after</td>
+                                <td>Añade contenido al final del documento</td>
+                            </tr>
+                            <tr>
+                                <td>::selection</td>
+                                <td>Coge la porción del texto que se está seleccionando por el usuario</td>
+                            </tr>
+                        </table>
+                        <p>Ejemplos:<br>
+                            p::first-line{color: green}<p class="line">Soy first-line</p><br>
+                            p::first-letter{color: blue}<p class="letter">Soy first-letter</p><br>
+                            p::after{content:"Texto"; color: red}<p class="after">Soy after</p><br>
+                            p::before{content:"texto"}<p class="before">Soy before</p><br>
+                            p::selection{color::brown}<p class="selection">Soy selection</p><br>
+
+
+                        </p>
+                    </ol>
+                    <div class="contact-form">
+                        <input type="text" class="contact-form__input--active">
+                        <input type="text" class="contact-form__input">
+                        <input type="text" class="contact-form__input">
+                        <input type="text" class="contact-form__input">
+                        <input type="password" class="contact-form__input">
+
+                    </div>
+                    <p>2do ejemplo:<br>
+                        .suscribete-form{<br>
+                            width: 250px;<br>
+                            margin: 10px auto;<br>
+                            border: 5px solid rgb(11, 72, 151);<br>
+                            border-radius: 10px;<br>
+                            padding: 40px 50px;<br>
+                        }<br>
+                        .suscribete-form__p-h2{<br>
+                            background: crimson;<br>
+                            border-radius: 5px;<br>
+                            padding: 10px;<br>
+                            text-align: center;<br>
+                            color: #fff;<br>
+                        }<br>
+                    </p>
+                    <div class="suscribete-form">
+                        <p class="suscribete-form__p">
+                            <h2 class="suscribete-form__p-h2">MONSSERRATH ROJO BAUTISTA</h2>
+                        </p>
+                    </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_3ra</h1>
+        <h2>Medidas</h2>
+        <h3>Medidas Relativas</h3>
+         
+        Aqui tenemos tambien los vh y vw que son muy utiles, vh indica la medida
+        en ancho, ejemplo 100vh, ocupará todo el ancho de nuestro contenedor o pantalla
+        y 100vw ocupara toda la pantalla o contenedor en largo.<br>Ejemplo:
+        <div class="DIV"> div con medidas vw, vh, px </div>
+        </p>
+
+        <h2>En seguida hay unos ejemplos de las propiedades de texto que son los siguientes:</h2>
+        <p>Ejemplo de propiedades de texto:<br>
+        .contact-form__h2{<br>
+            font-size:2em;<br>
+            font-family:Georgia;<br>
+            line-height:2;<br>
+            font-weight:600;<br>
+            font-stretch: normal;<br>
+            font-variant:smal-caps;<br>
+        }<br>
+        <h3 class="pt">En esta parte se encuentran las propiedades de texto</h3>
+        </p>
+        <h2>Normalize</h2>
+        <p>Normalmente todos los estilos que se colocan dentro de la pagina
+            cuando escribimos estructura html, el navegador lo coloca por defecto,
+            es decir, todos los margenes, paddings, anchos, y alturas, etc.
+            Es por ello que Normalize hace es reiniciar los estilos para que
+            nosotros podamos trabajar comodamente, para ello basta con descargar
+            normalize y enlazarlo a nuestra pagina, o tambien se puede con un
+            enlace externo para no descargar.<br>
+            Con este enlace añadimos normalize en este sitio web.<br>
+            <
+                link rel="stylesheet" type="text/css" href="css/normalize.css">
+        </p>
+
+        <h2>Teoria de cajas</h2>
+        <p>Cajas en linea.<br>
+            Lo elementos en linea ocupan solo lo devido del contenido que se le aplica.<br>
+        Y cajas en bloque.<br>
+    Los elementos en bloque ocupan todo el tamaño de la pagina. Y todos los elementos que vienen despues van a ir abajo.<br>
+    Pero hay una propiedad que le podemos colocar para que sea en linea los elementos en bloque y viceversa.<br>
+    Esta propiedad es display:inline o display:block y de esta manera podemos cambiarle sus propiedades.<br>
+    Ejemplo:
+
+    <h3 class="bloc">Es un elemento en bloque, pero tengo propiedades de un elemento en linea</h3>
+    <b class="linea">Este es un elemento en linea, pero tengo propiedades de un elemento en bloque</b>
+</p>
+    </div>
+    <div class="contenido">
+        <h1>Practica_4ta </h1>
+        <h2>Propiedades de caja</h2>
+        <p>Algunas propiedades de CSS<br>
+            .caja{<br>
+                background-color: red;<br>
+                display: inline-block;<br>
+                padding-bot
+                tom: 20px;<br>
+                padding-top: 20px;<br>
+                padding-left: 30px;<br>
+                padding-right: 30px;<br>
+                padding: 10px 20px 30px 40px;<br>
+                height: 100px;<br>
+                width: 100px;<br>
+                box-sizing: content-box;<br>
+                padding: 100px;<br>
+                margin-right: 40px;<br>
+                border-radius: 10px;<br>
+                border: 4px solid #a22;<br>
+                line-height: 1;<br>
+                box-shadow: 10px 15px 20px 20px #000;<br>
+                text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff;<br>
+                transform: rotate(-45deg);<br>
+            
+            }<br>
+        </p>
+        <h2 class="caja">El siguiente h2 editado con propiedades de caja</h2>
+        <h2 class="caja">Este h2 esta editado con propiedades de caja</h2>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_5° </h1>
+        <h2>Outline</h2>
+        <p>
+            .caja1{<br>
+                width: 200px;<br>
+                height: 200px;<br>
+                background: red;<br>
+                margin: auto;<br>
+                outline: 10px solid blue;<br>
+            }<br>
+        </p>
+        <div class="caja1"></div>
+        <div class="caja2"></div>
+        <h2>Position</h2>
+        <p>
+            .cuadro1, .cuadro2, .cuadro3{<br>
+                width:100px;<br>
+                height: 100px;<br>
+            }<br>
+            .cuadro1{<br>
+                background-color: orange;<br>
+                
+            }<br>
+            .cuadro2{<br>
+                background-color: green;<br>
+                position: relative;<br>
+                top:40px;<br>
+                left: 10px;
+                z-index: 100;<br>
+            }<br>
+            .cuadro3{<br>
+                background-color: lightblue;<br>
+                position: relative;<br>
+                z-index: 10;<br>
+            }<br>
+        </p>
+        <div class="cuadro1">Caja1</div>
+        <div class="cuadro2">Caja2</div>
+        <div class="cuadro3">Caja3</div>
+        <h2>z-index</h2>
+        <p>
+            .contenedor{<br>
+                width: 300px;<br>
+                height: 300px;<br>
+                background: blue;<br>
+                margin: 40px;<br>
+                position: relative;<br>
+            }<br>
+            .hijo{<br>
+                background: orange;<br>
+                height: 120px;<br>
+                width: 120px;<br>
+                position: relative;<br>
+                top: -20px;<br>
+                left: -20px;<br>
+                z-index: -1;<br>
+            }<br>
+        </p>
+        <div class="contenedor">
+            <div class="hijo"></div>
+        </div>
+        
+        <h2>Position Absolute</h2>
+        <p>
+            .a1, .a2, .a3, .a4{<br>
+                display: block;<br>
+                position: absolute;<br>
+                height: 100px;<br>
+                width: 100px;<br>
+                background: blue;<br>
+            
+            }<br>
+            .c{<br>
+                position: relative;<br>
+                margin: 50px auto;<br>
+                border: 4px solid red;<br>
+                height: 450px;<br>
+                width: 450px;<br>
+                background: yellow;<br>
+            }<br>
+            .a1{<br>
+                right: 0;<br>
+                bottom: 0;<br>
+            }<br>
+            .a2{<br>
+                right: 0;<br>
+            }<br>
+            .a3{<br>
+                top: 0;<br>
+            }<br>
+            .a4{<br>
+                bottom: 0;<br>
+            }<br>
+        </p>
+        <div class="c>
+        <div class="a1">Caja1</div>
+        <div class="a2">Caja2</div>
+        <div class="a3">Caja3</div>
+        <div class="a4">Caja4</div>
+        <div class="a5">Caja5</div>
+        </div>
+    </div>
+    
+    <div class="contenido">
+        <h1>Practica_6°</h1>
+        <h2>Fixed</h2>
+        <div class="caja-fixed">Esta caja esta fijada, viene de la practica 6 en Fixed</div>
+        <h2>Sticky</h2>
+        <p>Esta propiedad es como una mezcla de RELATIVE  y FIXED</p>
+        <div class="caja-sticky">
+            Est caja se queda en fixed pero con posicion relative, ya que es gracias a la propiedad
+        </div>
+        <h2>Propiedad Display</h2>
+       <b class="l">Elemento en linea</b>
+       <b class="b">Elemento en bloque</b>
+       <b class="ib">Elemento en inline-block</b>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_7°</h1>
+        <h2>OVERFLOW: (Y,X) AUTO, HIDDEN, SCROLL</h2>
+        <p>AUTO</p>
+        <div class="scroll">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum magnam quasi dolor quos blanditiis pariatur. Laudantium inventore, ea odio velit, animi unde nisi blanditiis magnam repellendus, placeat aut tempore. At.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores, nesciunt magni possimus veniam optio modi fuga nisi tempora accusantium quasi enim libero natus expedita facilis ut blanditiis fugit deserunt!
+        </p>
+        </div>
+        <p>HIDDEN</p>
+        <div class="scroll1">
+            <img src="img/2.jpg">
+        </div>
+        <p>FLOAT: (left, right, none, Inherit)</p>
+        <div class="cont">
+            <div class="primario">
+                <h1>uihuiyugygyuguyguy</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis beatae eveniet soluta rerum voluptatibus, asperiores laudantium neque tempora ducimus et enim possimus, distinctio nobis. Hic suscipit modi assumenda aut officiis.</p>
+            </div>
+            <div class="secundario">
+                <h3>nuinunununuinuinubhgbh</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet atque temporibus doloribus, sunt fugiat nesciunt ea consequatur laboriosam laudantium adipisci voluptate. Debitis ipsa cum numquam perferendis quis vel vero.</p>
+            </div>
+        </div>
+        <div class="cont2">
+            <img src="img/2.jpg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quod, quas consequatur numquam provident facilis explicabo minus architecto cum tempora? Saepe facilis itaque sint consequatur laborum voluptates obcaecati, quas delectus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum, debitis reprehenderit aperiam maxime cumque, deserunt illum facere, nobis quod velit nulla. Ipsa esse nisi quam reiciendis totam iusto! Ipsam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis dolore quos voluptatibus aliquid, natus alias hic fugiat reiciendis dolor nemo odit tempore quod nesciunt nam quasi quisquam fuga culpa?
+        </div>
+        <h2>Pseudo-elementos</h2>
+        ::first-line<br>
+        ::first-letter<br>
+        ::placeholder<br>
+        ::after<br>
+        ::before<br>
+        ::selection<br>
+        <div class="texto">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, rerum facere. Sed voluptatum nobis maxime, iusto accusantium laboriosam libero possimus? Culpa impedit optio fugiat totam consequatur itaque ratione amet nam.
+        </div>
+        <form class="form7"><input type="text" placeholder="Escribe..."></form>
+        <b class="bef">Hola</b>
+        <div class="pseudo">
+            Div de prueba
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_8°</h1>
+        <h2>Link</h2>
+        <a class="link" href="#jijiji" target="_blank">contiene un link</a>
+        <a class="link" href="#jiji66" target="_blank">contiene un link</a>
+        <p>Active</p><br>
+        <div class="active">¡Hola!</div>
+        <p>Focus</p><br>
+        <input class="focus">
+        <p>Lang</p>
+        <div class="caja8">
+            <b lang="en">Hello how are you?</b>
+            <b>¿Hola como estas?</b>
+        </div>
+        <p>Object-Fit: Contain, Cover, None, Scale-Down</p>
+        <div class="caja81">
+            <img src="img/2.jpg">
+        </div>
+        <p>Objet-Position: Left-Right-Top-Button<br> PX - EM - % - ETC</p>
+        <div class="caja82">
+            <img src="img/3.jpg">
+        </div>
+        <p>Cursor</p>
+        <div class="cursor">El cursor cambia</div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_9°</h1>
+        <p>Colores</p><br>
+        <div class="color">
+        <div class="hexa">En esta parte el color es pintado por hexadecimal</div>
+        <div class="normal">se pinta por colores "normales"</div>
+        <div class="rgba">Esto es pintado por "rgba"</div>
+        </div>
+        <p>Responsive Design - Mobile First</p>
+        <div class="caja-res">
+        <div class="responsive">
+            <h1>Aqui va el titulo de la plataforma</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum ducimus corrupti praesentium ad sequi, sed distinctio velit quae tempore quam, iure quis omnis sit. Quam quae velit inventore nulla.</p>
+        </div>
+        <div class="responsive2">
+            <h2>aqui va el titulo de la noticia</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quas neque deserunt laborum assumenda, numquam, autem, dicta quis illo dolorem omnis provident doloribus sed consequatur! Voluptatum accusamus ipsam laborum placeat?</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_10°</h1>
+        <p>Flex Box</p>
+        <h2>Cajas flexives</h2>
+
+        <div class="flex-container">
+           <div class="item">Caja Flexible</div>
+           <div class="item">Caja Flexible</div>
+           <div class="item">Caja Flexible</div>
+           <div class="item">Caja Flexible</div>
+           <div class="item">Caja Flexible</div>
+           <div class="item">Caja Flexible</div>
+           <div class="item">Caja Flexible</div>
+           <div class="item">Caja Flexible</div>
+           <div class="item">Caja Flexible</div>
+           <div class="item">Caja Flexible</div>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_11°</h1>
+        <h2>Propiedades de los items</h2>
+        <div class="flex-container2">
+            <div class="item2">Caja Flexible principal</div>
+         </div>
+         <p>Flex grow, flex-basis y flex-shrink</p>
+         <div class="flex-container3">
+            <div class="item3">Caja Flexible 1</div>
+            <div class="item3 d">Caja Flexible 2</div>
+            <div class="item3 t">Caja Flexible 3</div>
+         </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_12°</h1>
+        <h2>Flex y Order</h2>
+        <div class="flex-container4">
+           <div class="item4 orange">Caja Flexible 1</div>
+           <div class="item4 green">Caja Flexible 2</div>
+           <div class="item4">Caja Flexible 3</div>
+        </div>
+
+        "Formulario"
+        <div class="flex-container12">
+            <form class="form12">
+                <div class="form12__section">
+                    <input type="text" class="form12__input" placeholder="Ingresar el Nombre completo:">
+                </div>
+                <div class="form12__section">
+                    <input type="email" class="form12__input" placeholder="Ingresar Correo o Numero de telefono:">
+                </div>
+                <div class="form12__section">
+                    <textarea class="form12__input" placeholder="Ingresar Contraseña:"></textarea>
+                </div>
+                <div class="form12__section">
+                    <input type="submit" class="form12__input">
+                </div>
+            </form>
+            <div class="form12-img">
+                <div class="img-container">
+                    <img src="img/3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_13 </h1>
+        <h1>Grid</h1>
+        <h2>"Diferentes tipos"</h2>
+        <div class="gird-container">
+            <div class="gird-item">(1)</div>
+            <div class="gird-item">(2)</div>
+            <div class="gird-item">(3)</div>
+            <div class="gird-item">(4)</div>
+            <div class="gird-item">(5)</div>
+            
+         </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_14° </h1>
+        <h2>Repeat(cantidad,tamaño/s)</h2>
+        <div class="gird-container14">
+            <div class="gird-item14">1</div>
+            <div class="gird-item14">2</div>
+            <div class="gird-item14">3</div>
+            <div class="gird-item14">4</div>
+            <div class="gird-item14">5</div>
+            <div class="gird-item14">6</div>
+            <div class="gird-item14">7</div>
+            <div class="gird-item14">8</div>
+        </div>
+        <h2>Grid implícito y explícito</h2>
+        <div class="gird-container141">
+            <div class="gird-item141">1</div>
+            <div class="gird-item141">2</div>
+            <div class="gird-item141">3</div>
+            <div class="gird-item141">4</div>
+            <div class="gird-item141">5</div>
+            <div class="gird-item141">6</div>
+            <div class="gird-item141">7</div>
+            <div class="gird-item141">8</div>
+            <div class="gird-item141">9</div>
+            <div class="gird-item141">1</div>
+            <div class="gird-item141">2</div>
+            <div class="gird-item141">3</div>
+            <div class="gird-item141">4</div>
+            <div class="gird-item141">5</div>
+            <div class="gird-item141">6</div>
+            <div class="gird-item141">7</div>
+            <div class="gird-item141">8</div>
+            <div class="gird-item141">9</div>
+            <div class="gird-item141">7</div>
+            <div class="gird-item141">8</div>
+            <div class="gird-item141">9</div>
+        </div>
+        <h2>Grid dinámico</h2>
+        <div class="gird-container142">
+            <div class="gird-item142">1</div>
+            <div class="gird-item142">2</div>
+            <div class="gird-item142">3</div>
+            <div class="gird-item142">4</div>
+            <div class="gird-item142">5</div>
+            <div class="gird-item142">6</div>
+            <div class="gird-item142">7</div>
+            <div class="gird-item142">8</div>
+            <div class="gird-item142">9</div>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_15°</h1>
+        <h2>Alineacion y control de flujo</h2>
+        <div class="gird-container15">
+            <div class="gird-item15">1</div>
+            <div class="gird-item15">2</div>
+            <div class="gird-item15">3</div>
+            <div class="gird-item15">4</div>
+            <div class="gird-item15">5</div>
+            <div class="gird-item15">6</div>
+            <div class="gird-item15">7</div>
+            <div class="gird-item15">8</div>
+            <div class="gird-item15">9</div>
+        </div><br>
+        <h2>Order</h2>
+        <div class="gird-container151">
+            <div class="gird-item151">1</div>
+            <div class="gird-item151">2</div>
+            <div class="gird-item151">3</div>
+            <div class="gird-item151">4</div>
+            <div class="gird-item151">5</div>
+            <div class="gird-item151">6</div>
+            <div class="gird-item151">7</div>
+            <div class="gird-item151">8</div>
+            <div class="gird-item151">9</div>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_16</h1>
+        <h2>Area en Grid</h2>
+        <div class="grid-container">
+            <div class="grid-item grid-header">
+                <ul>
+                    <h2>Aqui igual se encuentra la galeria de imagenes</h2>
+                    <span><a href="Galeria de imagenes/index.html" target="_blank">Galeria de Imagenes</a></span>
+                    <h2></h2>
+                    <li><a href="#">Enlace</a></li>
+                    <li><a href="#">Enlace</a></li>
+                    <li><a href="#">Enlace</a></li>
+                    <li><a href="#">Enlace</a></li>
+                </ul>
+            </div>
+            <div class="grid-item grid-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ullam odio laborum alias et, obcaecati nemo vero quae quod veritatis natus nobis architecto ab quaerat suscipit reiciendis, voluptas culpa fugiat?</div>
+            <div class="grid-item grid-aside">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas dolorum error non, cumque molestiae provident eum nemo quis tempora magnam soluta voluptas at, deserunt ad debitis velit eligendi eveniet aliquam?</div>
+            <div class="grid-item grid-footer">Footer</div>
+        </div>
+        <h2>Lineas por nombres </h2>
+        <div class="grid-container1">
+            <div class="grid-item1">1</div>
+            <div class="grid-item1">2</div>
+            <div class="grid-item1">3</div>
+            <div class="grid-item1">4</div>
+            <div class="grid-item1">5</div>
+            <div class="grid-item1">6</div>
+            <div class="grid-item1">7</div>
+            <div class="grid-item1">8</div>
+            <div class="grid-item1">9</div>
+        </div>
+        <h2>Shorthand</h2>
+        <div class="div-responsive">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, sed iure molestiae totam vel vitae laboriosam vero ut quis corrupti eos quasi laudantium quos veniam! Quibusdam, debitis cupiditate. Dolorem, iusto.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla neque nesciunt reiciendis eveniet veritatis quos vero. Quisquam quod nesciunt ad aut, molestiae, deserunt veniam sed, consectetur eos officia dolorum maxime?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium saepe sequi labore autem quaerat commodi placeat ut culpa pariatur dolore asperiores fuga aliquid perspiciatis nobis debitis, aperiam laboriosam earum?
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_17</h1>
+        <div class="content">
+            <header class="header">Header</header>
+            <article class="main">Main</article>
+            <aside class="aside">Aside</aside>
+            <footer class="footer">Footer</footer>
+        </div>
+    </div>
+    <div class="contenido">
+        <h3>Transition</h3>
+        <p>Transition-property: property/ies - all - none<BR>
+        transition-duration: duration/s<br>
+        transtion-delay: delay/s</p>
+        <div class="container17">
+            <div class="caja17"></div>
+        </div>
+    </div>
+    <div class="contenido">
+        <h1>Transition</h1>
+        <p>transition-timing-function: linear, ease</p>
+        <div class="container171">
+            <div class="caja171"></div>
+            <div class="caja171"></div>
+            <div class="caja171"></div>
+            <div class="caja171"></div>
+            <div class="caja171"></div>
+            <div class="caja171"></div>
+        </div><br>
+        <p>Animaciones</p>
+        <div class="container172">
+            <div class="caja172"></div>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_18°</h1>
+        <h2>En este apartado se llevara acabo la Transform</h2>
+        <div class="containert">
+            <div class="cajat"><b>M</b></div>
+        </div>
+        <p>Background:</p>
+        <div class="backg"></div>
+    </div>
+
+    <div class="contenido">
+        <h1>Practica_19</h1>
+        <h2>Variables</h2>
+        <div class="contenido1"></div>
+        <div class="contenido2"></div>
+    </div>
+    <div class="contenido">
+        <h2>Filter</h2>
+        <div class="filter-img">
+            <img src="img/4.jpg">
+        </div>
+    </div>
+    <div class="contenido cont-1">
+        <div class="caja-cont"></div>
+        <div class="caja-cont"></div>
+    </div>
+    <div class="contenido cont-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, earum tenetur. Vero voluptate ad alias! Nulla, corporis facilis aliquam adipisci veniam voluptate assumenda ipsum corrupti necessitatibus optio, non pariatur saepe.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo id repudiandae quaerat tempora molestias illum ut commodi aut vel debitis, eos quas neque tenetur sequi distinctio at voluptatem sed esse!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam fuga vero earum nemo explicabo sed eius doloremque, quasi nisi doloribus pariatur corporis ipsum dolores qui. Rem, ea. Hic, quas quod.
+    </div>
+    <div class="contenido cont-3">MONSSERRATH ROJO BAUTISTA</div>
+    <div class="contenido cont-4">
+        <a href="#con">Ir abajo</a><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti voluptatibus aliquam ut at nulla consequatur sint quibusdam provident! Sequi amet est voluptates laborum fugit. Fugiat quam suscipit dolorem animi sed!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam corrupti aliquid qui dolorem quia iure harum laudantium quas, culpa at excepturi ratione totam quasi voluptas, non, nihil laborum reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur placeat doloribus consequuntur iure et ullam, in incidunt ratione totam sit harum provident eligendi adipisci eum commodi, voluptates ut sequi reprehenderit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aspernatur beatae repellendus quos praesentium veniam saepe neque modi recusandae deleniti iste voluptas iusto corporis delectus culpa officiis quasi, facilis similique.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ipsum impedit vel. Ipsam, hic unde exercitationem officia est, nostrum quas repellat iusto assumenda quaerat omnis quasi nobis, numquam culpa veniam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque at dicta quas distinctio cumque eaque molestiae perspiciatis, atque illum qui dolorem voluptatum consequuntur aliquam ea? Laudantium fugiat ullam amet?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quidem repellat repellendus ipsa quis atque ducimus facilis, sunt delectus ex libero repudiandae explicabo facere assumenda vero maiores iste officiis commodi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eum dolorem officia maxime, est inventore beatae perferendis, nobis amet unde et aut provident, modi quis. Sint praesentium debitis minus reiciendis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi explicabo voluptate ullam. Quas eaque error, hic culpa debitis dicta adipisci sequi rerum, consequuntur vitae labore omnis odio nisi! Aliquam?
+        <div id="con">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea quidem sunt quas non dolores esse, temporibus nesciunt quasi, nemo error in architecto distinctio nisi vero illo qui recusandae repellat perspiciatis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eum, facilis corrupti quae quo, ratione nam quod, facere minus laboriosam est quos incidunt beatae blanditiis laborum sed voluptatibus? Nemo, maiores.
+        </div>
+    </div>
+</body>
+</html>
